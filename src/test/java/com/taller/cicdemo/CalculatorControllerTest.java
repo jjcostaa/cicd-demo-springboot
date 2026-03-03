@@ -26,7 +26,7 @@ public class CalculatorControllerTest {
     void testMultiply() throws Exception{
         mockMvc.perform(get("/api/multiply")
         .param("a", "3")
-        .param("a", "4"))
+        .param("b", "4"))
         .andExpect(status().isOk())
         .andExpect(content().string("12"));
     }
